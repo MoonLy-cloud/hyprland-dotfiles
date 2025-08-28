@@ -1,0 +1,357 @@
+/* Tema Rosa-Dark para Waybar */
+* {
+	border: none;
+	border-radius: 10px;
+    font-family: "JetbrainsMono Nerd Font";
+	font-size: 15px;
+	min-height: 10px;
+}
+
+window {}
+
+window#waybar {
+	background-color: #271b33;
+    border-radius: 15px;
+    margin-top: 6px;
+    box-shadow: 0 4px 24px 0 #e48ecf22;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+#window {
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+    color: transparent;
+	background: transparent;
+}
+
+#workspaces {
+    margin: 6px 6px 6px 6px;  
+	border-radius: 18px;
+	background: #23172b;
+	transition: none;
+    padding-left: 12px;
+    padding-right: 6px;
+}
+
+#workspaces button {
+	transition: none;
+	color: #fd95ee;
+	background: transparent;
+    margin-right: 10px;
+}
+
+#workspaces button.persistent {
+    transition: none;
+    color: #b48ecf;
+    background: transparent;
+    font-size: 4px;
+}
+
+#workspaces button.empty {
+	color: #a48fa7;
+    font-size: 2px;
+    transition: none;
+    background: transparent;
+}
+
+#workspaces button.active {
+	transition: none;
+	color: #ff8edb;
+	background: transparent;
+	font-size: 4px;
+    text-shadow: 0 0 4px #ffb3e6;
+}
+
+#network {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 6px;
+	border-radius: 18px;
+    font-size: 14px;
+    font-weight:bold;
+	transition: none;
+	color: #ffb3e6;
+	background: #23172b;
+}
+
+#bluetooth{
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 6px;
+	border-radius: 18px;
+	font-size: 14px;
+	font-weight: bold;
+	transition: none;
+	color: #e48ecf;
+	background: #23172b;
+}
+
+#pulseaudio {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 6px;
+	border-radius: 18px;
+    font-size: 14px;
+    font-weight: bold;
+	transition: none;
+	color: #ffb3e6;
+	background: #23172b;
+}
+
+#battery {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 6px;
+	border-radius: 18px;
+	transition: none;
+    font-size: 14px;
+    font-weight: bold;
+	color: #f8b3e6;
+	background: #23172b;
+}
+
+#battery.charging, #battery.plugged {
+	color: #ffb3e6;
+    background-color: #2d1a2f;
+}
+
+#battery.critical:not(.charging) {
+    color: #e48ecf;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: #23172b;
+    }
+}
+
+#backlight {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #23172b;
+	background: #ffb3e6;
+}
+
+#clock {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+    margin-right: 0px;
+	margin-bottom: 6px;
+	border-radius: 18px;
+	transition: none;
+    font-size: 14px;
+    font-weight: bold;
+	color: #ffd6f6;
+	background: #23172b;
+}
+
+#memory {
+    margin: 6px 0px 6px 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 18px;
+    font-size: 14px;
+    font-weight: bold;
+	transition: none;
+	color: #ffd6f6;
+	background: #23172b;
+}
+
+#disk {	
+    margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 6px;
+	padding-right: 10px;
+	border-radius: 18px;
+    font-size: 14px;
+    font-weight: bold;
+	transition: none;
+	color: #ffd6f6;
+	background: #23172b;
+}
+
+#cpu {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 6px;
+	padding-right: 10px;
+	border-radius: 18px;
+    font-size: 14px;
+    font-weight: bold;
+	transition: none;
+	color: #ffd6f6;
+	background: #23172b;
+}
+
+#tray {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #ffb3e6;
+	background: #18121e;
+}
+
+#custom-launcher {
+	font-size: 18px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 5px;
+	border-radius: 10px;
+	transition: none;
+    color: #ffb3e6;
+    background: transparent;
+}
+
+#custom-power {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 6px;
+	padding-right: 15px;
+	border-radius: 18px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+	transition: none;
+	color: #ffd6f6;
+	background: transparent;
+}
+
+#custom-updates {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #23172b;
+	background: #ffb3e6;
+}
+
+
+#temperature {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 6px;
+	border-radius: 18px;
+	transition: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffb3e6;
+	background: #23172b;
+}
+
+#temperature.critical {
+	color: #e48ecf;
+	background: #23172b;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#power-profiles-daemon {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 6px;
+	border-radius: 18px;
+	transition: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffd6f6;
+	background: #23172b;
+}
+
+#custom-media.mpris-spotify,
+#custom-media.mpris-vlc,
+#custom-media.mpris-default {
+  background: #23172b;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffd6f6;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 6px;
+  margin-left: 10px;
+  margin-bottom: 6px;
+  border-radius: 18px;
+}
+
+#custom-cpu_speed {
+	margin-top: 6px;
+	margin-left: 8px;
+	margin-bottom: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 18px;
+	transition: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffd6f6;
+	background: #23172b;
+}
+#custom-cpu_speed.cpu-speed {
+    color: #ffd6f6;
+    font-weight: bold;
+    padding: 0px 10px;
+    border-radius: 16px;
+    background: #2d1a2f;
+    font-size: 14px;
+    margin: 6px 8px;
+}
+
+/* Clases para envycontrol */
+.envy-intel,
+.envy-hybrid,
+.envy-nvidia,
+.envy-integrated,
+.envy-amd,
+.envy-unknown {
+  background: #23172b;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffd6f6;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 6px;
+  margin-left: 10px;
+  margin-bottom: 6px;
+  border-radius: 18px;
+}
